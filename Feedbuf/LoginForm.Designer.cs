@@ -1,6 +1,6 @@
 ﻿namespace Feedbuf
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,8 @@
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label Usernamelogin;
         private System.Windows.Forms.Label Passwordlogin;
+        private System.Windows.Forms.Button RegisterBtn;
+        private System.Windows.Forms.Label ForgotPasswordLbl;
     }
 }
 

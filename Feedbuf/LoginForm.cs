@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Feedbuf
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -24,6 +24,8 @@ namespace Feedbuf
             this.Password = new System.Windows.Forms.TextBox();
             this.Usernamelogin = new System.Windows.Forms.Label();
             this.Passwordlogin = new System.Windows.Forms.Label();
+            this.RegisterBtn = new System.Windows.Forms.Button();
+            this.ForgotPasswordLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Signin
@@ -34,6 +36,7 @@ namespace Feedbuf
             this.Signin.TabIndex = 0;
             this.Signin.Text = "Sign in";
             this.Signin.UseVisualStyleBackColor = true;
+            this.Signin.Click += new System.EventHandler(this.Signin_Click);
             // 
             // Username
             // 
@@ -67,17 +70,56 @@ namespace Feedbuf
             this.Passwordlogin.TabIndex = 4;
             this.Passwordlogin.Text = "Password";
             // 
-            // Form1
+            // RegisterBtn
+            // 
+            this.RegisterBtn.Location = new System.Drawing.Point(152, 254);
+            this.RegisterBtn.Name = "RegisterBtn";
+            this.RegisterBtn.Size = new System.Drawing.Size(103, 50);
+            this.RegisterBtn.TabIndex = 5;
+            this.RegisterBtn.Text = "Register";
+            this.RegisterBtn.UseVisualStyleBackColor = true;
+            this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
+            // 
+            // ForgotPasswordLbl
+            // 
+            this.ForgotPasswordLbl.AutoSize = true;
+            this.ForgotPasswordLbl.BackColor = System.Drawing.SystemColors.Control;
+            this.ForgotPasswordLbl.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.ForgotPasswordLbl.Location = new System.Drawing.Point(542, 240);
+            this.ForgotPasswordLbl.Name = "ForgotPasswordLbl";
+            this.ForgotPasswordLbl.Size = new System.Drawing.Size(115, 16);
+            this.ForgotPasswordLbl.TabIndex = 6;
+            this.ForgotPasswordLbl.Text = "Forgot password?";
+            this.ForgotPasswordLbl.Click += new System.EventHandler(this.ForgotPasswordLbl_Click);
+            // 
+            // LoginForm
             // 
             this.ClientSize = new System.Drawing.Size(771, 391);
+            this.Controls.Add(this.ForgotPasswordLbl);
+            this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.Passwordlogin);
             this.Controls.Add(this.Usernamelogin);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.Signin);
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void RegisterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForgotPasswordLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Signin_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -16,5 +16,10 @@ namespace Feedbuf
         {
             InitializeComponent();
         }
+
+        private void Logboek_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
