@@ -120,6 +120,8 @@ namespace Feedbuf
 
         private void Signin_Click(object sender, EventArgs e)
         {
+            new HomecscreenForm().Show();
+            this.Hide();
 
         }
     }

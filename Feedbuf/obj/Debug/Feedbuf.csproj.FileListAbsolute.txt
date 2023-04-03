@@ -1,0 +1,13 @@
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.AssemblyReference.cache
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.SuggestedBindingRedirects.cache
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.LoginForm.resources
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.homecscreen.resources
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.Logboek.resources
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.Properties.Resources.resources
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.GenerateResource.cache
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.CoreCompileInputs.cache
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe.config
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\bin\Debug\Feedbuf.pdb
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.exe
+C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.pdb

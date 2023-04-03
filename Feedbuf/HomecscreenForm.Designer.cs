@@ -1,6 +1,6 @@
 ﻿namespace Feedbuf
 {
-    partial class homecscreen
+    partial class HomecscreenForm
     {
         /// <summary>
         /// Required designer variable.

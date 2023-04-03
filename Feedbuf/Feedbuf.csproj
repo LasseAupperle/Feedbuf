@@ -70,28 +70,28 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="homecscreen.cs">
+    <Compile Include="HomecscreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="homecscreen.Designer.cs">
-      <DependentUpon>homecscreen.cs</DependentUpon>
+    <Compile Include="HomecscreenForm.Designer.cs">
+      <DependentUpon>HomecscreenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logboek.cs">
+    <Compile Include="LogboekForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logboek.Designer.cs">
-      <DependentUpon>Logboek.cs</DependentUpon>
+    <Compile Include="LogboekForm.Designer.cs">
+      <DependentUpon>LogboekForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="homecscreen.resx">
-      <DependentUpon>homecscreen.cs</DependentUpon>
+    <EmbeddedResource Include="HomecscreenForm.resx">
+      <DependentUpon>HomecscreenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logboek.resx">
-      <DependentUpon>Logboek.cs</DependentUpon>
+    <EmbeddedResource Include="LogboekForm.resx">
+      <DependentUpon>LogboekForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Feedbuf
 {
-    public partial class homecscreen : Form
+    public partial class HomecscreenForm : Form
     {
-        public homecscreen()
+        public HomecscreenForm()
         {
             InitializeComponent();
         }
