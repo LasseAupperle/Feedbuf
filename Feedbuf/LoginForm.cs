@@ -30,9 +30,9 @@ namespace Feedbuf
             // 
             // Signin
             // 
-            this.Signin.Location = new System.Drawing.Point(285, 254);
+            this.Signin.Location = new System.Drawing.Point(267, 260);
             this.Signin.Name = "Signin";
-            this.Signin.Size = new System.Drawing.Size(179, 79);
+            this.Signin.Size = new System.Drawing.Size(115, 40);
             this.Signin.TabIndex = 0;
             this.Signin.Text = "Sign in";
             this.Signin.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@ namespace Feedbuf
             // 
             // RegisterBtn
             // 
-            this.RegisterBtn.Location = new System.Drawing.Point(152, 254);
+            this.RegisterBtn.Location = new System.Drawing.Point(419, 255);
             this.RegisterBtn.Name = "RegisterBtn";
             this.RegisterBtn.Size = new System.Drawing.Size(103, 50);
             this.RegisterBtn.TabIndex = 5;
@@ -85,7 +85,7 @@ namespace Feedbuf
             this.ForgotPasswordLbl.AutoSize = true;
             this.ForgotPasswordLbl.BackColor = System.Drawing.SystemColors.Control;
             this.ForgotPasswordLbl.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.ForgotPasswordLbl.Location = new System.Drawing.Point(542, 240);
+            this.ForgotPasswordLbl.Location = new System.Drawing.Point(285, 217);
             this.ForgotPasswordLbl.Name = "ForgotPasswordLbl";
             this.ForgotPasswordLbl.Size = new System.Drawing.Size(115, 16);
             this.ForgotPasswordLbl.TabIndex = 6;

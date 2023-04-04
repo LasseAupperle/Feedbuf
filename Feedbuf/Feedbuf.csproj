@@ -70,6 +70,10 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomecscreenForm.cs" />
+    <Compile Include="HomecscreenForm.Designer.cs">
+      <DependentUpon>HomecscreenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogboekForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +84,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomecscreenForm.resx">
+      <DependentUpon>HomecscreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogboekForm.resx">
       <DependentUpon>LogboekForm.cs</DependentUpon>
