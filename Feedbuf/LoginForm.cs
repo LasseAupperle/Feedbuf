@@ -19,64 +19,65 @@ namespace Feedbuf
 
         private void InitializeComponent()
         {
-            this.Signin = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.Button();
             this.UsernameTBox = new System.Windows.Forms.TextBox();
             this.PasswordTbox = new System.Windows.Forms.TextBox();
-            this.UsernameBtn = new System.Windows.Forms.Label();
-            this.PasswordBtn = new System.Windows.Forms.Label();
+            this.GebruikersnaamLbl = new System.Windows.Forms.Label();
+            this.WachtwoordLbl = new System.Windows.Forms.Label();
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.ForgotPasswordLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Signin
+            // Login
             // 
-            this.Signin.Location = new System.Drawing.Point(267, 260);
-            this.Signin.Name = "Signin";
-            this.Signin.Size = new System.Drawing.Size(115, 40);
-            this.Signin.TabIndex = 0;
-            this.Signin.Text = "Sign in";
-            this.Signin.UseVisualStyleBackColor = true;
-            this.Signin.Click += new System.EventHandler(this.Signin_Click);
+            this.Login.Location = new System.Drawing.Point(285, 233);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(179, 26);
+            this.Login.TabIndex = 0;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Signin_Click);
             // 
             // UsernameTBox
             // 
             this.UsernameTBox.Location = new System.Drawing.Point(285, 103);
             this.UsernameTBox.Name = "UsernameTBox";
-            this.UsernameTBox.Size = new System.Drawing.Size(179, 22);
+            this.UsernameTBox.Size = new System.Drawing.Size(179, 20);
             this.UsernameTBox.TabIndex = 1;
             // 
             // PasswordTbox
             // 
             this.PasswordTbox.Location = new System.Drawing.Point(285, 173);
             this.PasswordTbox.Name = "PasswordTbox";
-            this.PasswordTbox.Size = new System.Drawing.Size(179, 22);
+            this.PasswordTbox.Size = new System.Drawing.Size(179, 20);
             this.PasswordTbox.TabIndex = 2;
             // 
-            // UsernameBtn
+            // GebruikersnaamLbl
             // 
-            this.UsernameBtn.AutoSize = true;
-            this.UsernameBtn.Location = new System.Drawing.Point(282, 84);
-            this.UsernameBtn.Name = "UsernameBtn";
-            this.UsernameBtn.Size = new System.Drawing.Size(70, 16);
-            this.UsernameBtn.TabIndex = 3;
-            this.UsernameBtn.Text = "Username";
+            this.GebruikersnaamLbl.AutoSize = true;
+            this.GebruikersnaamLbl.Location = new System.Drawing.Point(282, 84);
+            this.GebruikersnaamLbl.Name = "GebruikersnaamLbl";
+            this.GebruikersnaamLbl.Size = new System.Drawing.Size(84, 13);
+            this.GebruikersnaamLbl.TabIndex = 3;
+            this.GebruikersnaamLbl.Text = "Gebruikersnaam";
+            this.GebruikersnaamLbl.Click += new System.EventHandler(this.GebruikersnaamLbl_Click);
             // 
-            // PasswordBtn
+            // WachtwoordLbl
             // 
-            this.PasswordBtn.AutoSize = true;
-            this.PasswordBtn.Location = new System.Drawing.Point(285, 151);
-            this.PasswordBtn.Name = "PasswordBtn";
-            this.PasswordBtn.Size = new System.Drawing.Size(67, 16);
-            this.PasswordBtn.TabIndex = 4;
-            this.PasswordBtn.Text = "Password";
+            this.WachtwoordLbl.AutoSize = true;
+            this.WachtwoordLbl.Location = new System.Drawing.Point(285, 151);
+            this.WachtwoordLbl.Name = "WachtwoordLbl";
+            this.WachtwoordLbl.Size = new System.Drawing.Size(68, 13);
+            this.WachtwoordLbl.TabIndex = 4;
+            this.WachtwoordLbl.Text = "Wachtwoord";
             // 
             // RegisterBtn
             // 
-            this.RegisterBtn.Location = new System.Drawing.Point(419, 255);
+            this.RegisterBtn.Location = new System.Drawing.Point(285, 277);
             this.RegisterBtn.Name = "RegisterBtn";
-            this.RegisterBtn.Size = new System.Drawing.Size(103, 50);
+            this.RegisterBtn.Size = new System.Drawing.Size(179, 25);
             this.RegisterBtn.TabIndex = 5;
-            this.RegisterBtn.Text = "Register";
+            this.RegisterBtn.Text = "Registreren";
             this.RegisterBtn.UseVisualStyleBackColor = true;
             this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
@@ -87,9 +88,9 @@ namespace Feedbuf
             this.ForgotPasswordLbl.ForeColor = System.Drawing.SystemColors.Highlight;
             this.ForgotPasswordLbl.Location = new System.Drawing.Point(285, 217);
             this.ForgotPasswordLbl.Name = "ForgotPasswordLbl";
-            this.ForgotPasswordLbl.Size = new System.Drawing.Size(115, 16);
+            this.ForgotPasswordLbl.Size = new System.Drawing.Size(119, 13);
             this.ForgotPasswordLbl.TabIndex = 6;
-            this.ForgotPasswordLbl.Text = "Forgot password?";
+            this.ForgotPasswordLbl.Text = "Wachtwoord vergeten?";
             this.ForgotPasswordLbl.Click += new System.EventHandler(this.ForgotPasswordLbl_Click);
             // 
             // LoginForm
@@ -97,11 +98,11 @@ namespace Feedbuf
             this.ClientSize = new System.Drawing.Size(771, 391);
             this.Controls.Add(this.ForgotPasswordLbl);
             this.Controls.Add(this.RegisterBtn);
-            this.Controls.Add(this.PasswordBtn);
-            this.Controls.Add(this.UsernameBtn);
+            this.Controls.Add(this.WachtwoordLbl);
+            this.Controls.Add(this.GebruikersnaamLbl);
             this.Controls.Add(this.PasswordTbox);
             this.Controls.Add(this.UsernameTBox);
-            this.Controls.Add(this.Signin);
+            this.Controls.Add(this.Login);
             this.Name = "LoginForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -110,7 +111,8 @@ namespace Feedbuf
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-
+            new RegisterForm().Show();
+            this.Hide();
         }
 
         private void ForgotPasswordLbl_Click(object sender, EventArgs e)
@@ -120,8 +122,13 @@ namespace Feedbuf
 
         private void Signin_Click(object sender, EventArgs e)
         {
-            new HomecscreenForm().Show();
+            new LogboekForm().Show();
             this.Hide();
+
+        }
+
+        private void GebruikersnaamLbl_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -19,13 +19,13 @@ namespace Feedbuf
 
         public void hidePanels() 
         {
-            PlanningPannel.Visible = false;        
+                    
         }
 
         private void Logboek_Load(object sender, EventArgs e)
         {
             hidePanels();
-            PlanningPannel.Visible= false;
+            
         }
 
         private void PlanningPannel_Paint(object sender, PaintEventArgs e)
@@ -33,10 +33,11 @@ namespace Feedbuf
 
         }
 
-        private void planninglogboek_Click(object sender, EventArgs e)
+  
+        private void NieuweNotitieBtn_Click(object sender, EventArgs e)
         {
-            hidePanels();
-            PlanningPannel.Visible = true;
+            new NieuweNotitiefrom().Show();
+            this.Hide();
         }
     }
 }

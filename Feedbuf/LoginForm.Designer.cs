@@ -30,11 +30,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Signin;
+        private System.Windows.Forms.Button Login;
         private System.Windows.Forms.TextBox UsernameTBox;
         private System.Windows.Forms.TextBox PasswordTbox;
-        private System.Windows.Forms.Label UsernameBtn;
-        private System.Windows.Forms.Label PasswordBtn;
+        private System.Windows.Forms.Label GebruikersnaamLbl;
+        private System.Windows.Forms.Label WachtwoordLbl;
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Label ForgotPasswordLbl;
     }

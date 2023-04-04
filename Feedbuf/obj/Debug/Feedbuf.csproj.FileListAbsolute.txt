@@ -11,3 +11,17 @@ C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe
 C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\bin\Debug\Feedbuf.pdb
 C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.exe
 C:\Users\lasse\Documents\GitHub\Feedbuf\Feedbuf\obj\Debug\Feedbuf.pdb
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.AssemblyReference.cache
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.SuggestedBindingRedirects.cache
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.LoginForm.resources
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.LogboekForm.resources
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.NieuweNotitiefrom.resources
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.Properties.Resources.resources
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.GenerateResource.cache
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.csproj.CoreCompileInputs.cache
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.exe
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.pdb
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe.config
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.pdb
+C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.RegisterForm.resources
