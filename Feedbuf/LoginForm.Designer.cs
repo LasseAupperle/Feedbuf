@@ -31,10 +31,10 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Signin;
-        private System.Windows.Forms.TextBox Username;
-        private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.Label Usernamelogin;
-        private System.Windows.Forms.Label Passwordlogin;
+        private System.Windows.Forms.TextBox UsernameTBox;
+        private System.Windows.Forms.TextBox PasswordTbox;
+        private System.Windows.Forms.Label UsernameBtn;
+        private System.Windows.Forms.Label PasswordBtn;
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Label ForgotPasswordLbl;
     }

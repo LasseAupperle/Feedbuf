@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.planninglogboek = new System.Windows.Forms.Button();
-            this.Weekdoelenlogboek = new System.Windows.Forms.Button();
+            this.planningBtn = new System.Windows.Forms.Button();
+            this.WeekdoelenBtn = new System.Windows.Forms.Button();
             this.PlanningPannel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // planninglogboek
+            // planningBtn
             // 
-            this.planninglogboek.Location = new System.Drawing.Point(29, 22);
-            this.planninglogboek.Name = "planninglogboek";
-            this.planninglogboek.Size = new System.Drawing.Size(107, 55);
-            this.planninglogboek.TabIndex = 0;
-            this.planninglogboek.Text = "planning";
-            this.planninglogboek.UseVisualStyleBackColor = true;
-            this.planninglogboek.Click += new System.EventHandler(this.planninglogboek_Click);
+            this.planningBtn.Location = new System.Drawing.Point(29, 22);
+            this.planningBtn.Name = "planningBtn";
+            this.planningBtn.Size = new System.Drawing.Size(107, 55);
+            this.planningBtn.TabIndex = 0;
+            this.planningBtn.Text = "planning";
+            this.planningBtn.UseVisualStyleBackColor = true;
+            this.planningBtn.Click += new System.EventHandler(this.planninglogboek_Click);
             // 
-            // Weekdoelenlogboek
+            // WeekdoelenBtn
             // 
-            this.Weekdoelenlogboek.Location = new System.Drawing.Point(29, 102);
-            this.Weekdoelenlogboek.Name = "Weekdoelenlogboek";
-            this.Weekdoelenlogboek.Size = new System.Drawing.Size(108, 55);
-            this.Weekdoelenlogboek.TabIndex = 1;
-            this.Weekdoelenlogboek.Text = "Weekdoelen";
-            this.Weekdoelenlogboek.UseVisualStyleBackColor = true;
+            this.WeekdoelenBtn.Location = new System.Drawing.Point(29, 102);
+            this.WeekdoelenBtn.Name = "WeekdoelenBtn";
+            this.WeekdoelenBtn.Size = new System.Drawing.Size(108, 55);
+            this.WeekdoelenBtn.TabIndex = 1;
+            this.WeekdoelenBtn.Text = "Weekdoelen";
+            this.WeekdoelenBtn.UseVisualStyleBackColor = true;
             // 
             // PlanningPannel
             // 
@@ -60,15 +60,15 @@
             this.PlanningPannel.TabIndex = 2;
             this.PlanningPannel.Paint += new System.Windows.Forms.PaintEventHandler(this.PlanningPannel_Paint);
             // 
-            // Logboek
+            // LogboekForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.PlanningPannel);
-            this.Controls.Add(this.Weekdoelenlogboek);
-            this.Controls.Add(this.planninglogboek);
-            this.Name = "Logboek";
+            this.Controls.Add(this.WeekdoelenBtn);
+            this.Controls.Add(this.planningBtn);
+            this.Name = "LogboekForm";
             this.Text = "Logboek";
             this.Load += new System.EventHandler(this.Logboek_Load);
             this.ResumeLayout(false);
@@ -77,8 +77,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button planninglogboek;
-        private System.Windows.Forms.Button Weekdoelenlogboek;
+        private System.Windows.Forms.Button planningBtn;
+        private System.Windows.Forms.Button WeekdoelenBtn;
         private System.Windows.Forms.Panel PlanningPannel;
     }
 }
