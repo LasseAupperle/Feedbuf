@@ -41,11 +41,14 @@
             this.ActBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VoegActToeBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UrenBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.VoegUrenToeBtn = new System.Windows.Forms.Button();
+            this.NotitieOpslaanBtn = new System.Windows.Forms.Button();
             this.PanelOE.SuspendLayout();
             this.LDPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // OnderwijseenheidBtn
@@ -66,7 +69,7 @@
             this.PanelOE.Controls.Add(this.B1A1Btn);
             this.PanelOE.Location = new System.Drawing.Point(13, 91);
             this.PanelOE.Name = "PanelOE";
-            this.PanelOE.Size = new System.Drawing.Size(185, 166);
+            this.PanelOE.Size = new System.Drawing.Size(185, 302);
             this.PanelOE.TabIndex = 1;
             this.PanelOE.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelOE_Paint);
             // 
@@ -113,7 +116,7 @@
             this.LDPanel.Controls.Add(this.LerenSQLBtn);
             this.LDPanel.Location = new System.Drawing.Point(205, 91);
             this.LDPanel.Name = "LDPanel";
-            this.LDPanel.Size = new System.Drawing.Size(188, 166);
+            this.LDPanel.Size = new System.Drawing.Size(188, 302);
             this.LDPanel.TabIndex = 3;
             this.LDPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LDPanel_Paint);
             // 
@@ -158,7 +161,7 @@
             this.panel1.Controls.Add(this.VoegActToeBtn);
             this.panel1.Location = new System.Drawing.Point(400, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 167);
+            this.panel1.Size = new System.Drawing.Size(188, 303);
             this.panel1.TabIndex = 5;
             // 
             // VoegActToeBtn
@@ -170,29 +173,49 @@
             this.VoegActToeBtn.Text = "Voeg Activiteit Toe";
             this.VoegActToeBtn.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // UrenBtn
             // 
-            this.button1.Location = new System.Drawing.Point(595, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 71);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.UrenBtn.Location = new System.Drawing.Point(595, 13);
+            this.UrenBtn.Name = "UrenBtn";
+            this.UrenBtn.Size = new System.Drawing.Size(193, 71);
+            this.UrenBtn.TabIndex = 6;
+            this.UrenBtn.Text = "Uren";
+            this.UrenBtn.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.VoegUrenToeBtn);
             this.panel2.Location = new System.Drawing.Point(595, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 167);
+            this.panel2.Size = new System.Drawing.Size(193, 303);
             this.panel2.TabIndex = 7;
+            // 
+            // VoegUrenToeBtn
+            // 
+            this.VoegUrenToeBtn.Location = new System.Drawing.Point(3, 94);
+            this.VoegUrenToeBtn.Name = "VoegUrenToeBtn";
+            this.VoegUrenToeBtn.Size = new System.Drawing.Size(178, 23);
+            this.VoegUrenToeBtn.TabIndex = 6;
+            this.VoegUrenToeBtn.Text = "Voeg Uren Toe";
+            this.VoegUrenToeBtn.UseVisualStyleBackColor = true;
+            // 
+            // NotitieOpslaanBtn
+            // 
+            this.NotitieOpslaanBtn.Location = new System.Drawing.Point(628, 408);
+            this.NotitieOpslaanBtn.Name = "NotitieOpslaanBtn";
+            this.NotitieOpslaanBtn.Size = new System.Drawing.Size(160, 30);
+            this.NotitieOpslaanBtn.TabIndex = 8;
+            this.NotitieOpslaanBtn.Text = "Notitie Opslaan";
+            this.NotitieOpslaanBtn.UseVisualStyleBackColor = true;
             // 
             // NieuweNotitiefrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NotitieOpslaanBtn);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.UrenBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ActBtn);
             this.Controls.Add(this.LDPanel);
@@ -204,6 +227,7 @@
             this.PanelOE.ResumeLayout(false);
             this.LDPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -223,7 +247,9 @@
         private System.Windows.Forms.Button ActBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button VoegActToeBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button UrenBtn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button VoegUrenToeBtn;
+        private System.Windows.Forms.Button NotitieOpslaanBtn;
     }
 }
