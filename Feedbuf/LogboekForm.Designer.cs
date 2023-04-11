@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.NieuweNotitieBtn = new System.Windows.Forms.Button();
+            this.UitlogBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // NieuweNotitieBtn
@@ -41,16 +44,36 @@
             this.NieuweNotitieBtn.UseVisualStyleBackColor = true;
             this.NieuweNotitieBtn.Click += new System.EventHandler(this.NieuweNotitieBtn_Click);
             // 
+            // UitlogBtn
+            // 
+            this.UitlogBtn.Location = new System.Drawing.Point(12, 347);
+            this.UitlogBtn.Name = "UitlogBtn";
+            this.UitlogBtn.Size = new System.Drawing.Size(127, 56);
+            this.UitlogBtn.TabIndex = 1;
+            this.UitlogBtn.Text = "Uitloggen";
+            this.UitlogBtn.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(707, 318);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // LogboekForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 415);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.UitlogBtn);
             this.Controls.Add(this.NieuweNotitieBtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogboekForm";
             this.Text = "Logboek";
             this.Load += new System.EventHandler(this.Logboek_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,5 +81,7 @@
         #endregion
 
         private System.Windows.Forms.Button NieuweNotitieBtn;
+        private System.Windows.Forms.Button UitlogBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
