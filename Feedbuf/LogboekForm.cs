@@ -67,6 +67,7 @@ namespace Feedbuf
             };
             DAL dal = new DAL();
             int result = DAL.addNewNotitie(feedback);
+            MessageBox.Show("U heeft een notitie ingevuld.");
             //check feedback en Feedback in vid
 
         }
@@ -84,6 +85,8 @@ namespace Feedbuf
         private void DatagridLogboek_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView datagridlogboek = (DataGridView)sender;
+
+
             
         }
 
@@ -91,9 +94,9 @@ namespace Feedbuf
         {
             //DataGridView datagridlogboek = (DataGridView)sender;
             int rowClicked = DatagridLogboek.CurrentRow.Index;
-            MessageBox.Show("De tij is " + rowClicked);
+            
             int notitieID = (int)DatagridLogboek.Rows[rowClicked].Cells[0].Value;
-            MessageBox.Show("ID van notitie " + notitieID);
+            MessageBox.Show("U heeft het volgende ID geselecteerd: " + notitieID + "Deze zal verwijderd worden.");
             DAL dal = new DAL();
 
             int result = dal.verwijderNotitie(notitieID);
