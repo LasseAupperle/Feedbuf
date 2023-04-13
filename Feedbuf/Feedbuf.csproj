@@ -60,12 +60,6 @@
     <Compile Include="LogboekForm.Designer.cs">
       <DependentUpon>LogboekForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NieuweNotitiefrom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NieuweNotitiefrom.Designer.cs">
-      <DependentUpon>NieuweNotitiefrom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -79,9 +73,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogboekForm.resx">
       <DependentUpon>LogboekForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NieuweNotitiefrom.resx">
-      <DependentUpon>NieuweNotitiefrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

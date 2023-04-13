@@ -11,10 +11,10 @@ namespace Feedbuf
     public class DAL
     {
 
-        private string connectionString = "Data Source=LAPTOP-9PGT0A7T;Initial Catalog=FeedbufDB;Integrated Security=True";
+        private static string connectionString = "Data Source=LAPTOP-9PGT0A7T;Initial Catalog=FeedbufDB;Integrated Security=True";
         List<Feedback> Feedbacks = new List<Feedback>();
 
-        public int addNewNotitie(Feedback feedback)
+        public static int addNewNotitie(Feedback feedback)
         {
             
             //SqlConnection cnn = new SqlConnection(connectionString);
@@ -26,13 +26,14 @@ namespace Feedbuf
                     cnn.ConnectionString = connectionString;
                     cnn.Open();
                     command.Connection = cnn;
-                    command.CommandText = "INSERT INTO 'feedback' ( 'FBinhoud', 'Datumtijd', 'Uren', 'OE', 'LD', 'ACT') VALUES (@fbinhoud, @datumtijd, @uren, @oe, @ld, @act)";
-                    command.Parameters.AddWithValue("@fbinhoud", feedback.FBinhoud);
-                    command.Parameters.AddWithValue("@datumtijd", feedback.Datumtijd);
+                    command.CommandText = "INSERT INTO Feedback (FBINHOUD, UREN, OE, LD, ACT, STUDENTID, AKKOORD) VALUES (@fbinhoud, @uren, @oe, @ld, @act, @studentid, @akkoord)";
+                    command.Parameters.AddWithValue("@fbinhoud", feedback.FBinhoud);                   
                     command.Parameters.AddWithValue("@uren", feedback.Uren);
                     command.Parameters.AddWithValue("@oe", feedback.OE);
                     command.Parameters.AddWithValue("@ld", feedback.LD);
-                    command.Parameters.AddWithValue("@fact", feedback.ACT);
+                    command.Parameters.AddWithValue("@act", feedback.ACT);
+                    command.Parameters.AddWithValue("@studentid", feedback.StudentID);
+                    command.Parameters.AddWithValue("@akkoord", feedback.Akkoord);
 
                     int newRows = command.ExecuteNonQuery();
 
@@ -55,19 +56,19 @@ namespace Feedbuf
                     cnn.ConnectionString = connectionString;
                     cnn.Open();
                     command.Connection = cnn;
-                    command.CommandText = "SELECT FeedbackID, FBInhoud, Akkoord, Datumtijd, Uren, OE, LD, ACT FROM Feedback";
+                    command.CommandText = "SELECT FeedbackID, FBInhoud, Akkoord, Uren, OE, LD, ACT, StudentID FROM Feedback";
                     using (SqlDataReader dataReader = command.ExecuteReader())
                     {
                         while (dataReader.Read())
                         {
                             Feedbacks.Add(new Feedback(Int32.Parse(dataReader[0].ToString())
                                                                         , dataReader[1].ToString()
-                                                                        , Convert.ToBoolean(dataReader[2].ToString())
-                                                                        , Convert.ToDateTime(dataReader[3].ToString())
-                                                                        , Int32.Parse(dataReader[4].ToString())
+                                                                        , Convert.ToBoolean(dataReader[2].ToString())                                           
+                                                                        , Int32.Parse(dataReader[3].ToString())
+                                                                        , dataReader[4].ToString()
                                                                         , dataReader[5].ToString()
                                                                         , dataReader[6].ToString()
-                                                                        , dataReader[7].ToString()
+                                                                        , Int32.Parse(dataReader[7].ToString())
                                                                         ));
                         }
 
@@ -78,6 +79,27 @@ namespace Feedbuf
 
             }
             return Feedbacks;
+        }
+
+        internal int verwijderNotitie(int notitieID)
+        {
+            using (SqlConnection cnn = new SqlConnection())
+            {
+                using (SqlCommand command = new SqlCommand())
+                {
+                    cnn.ConnectionString = connectionString;
+                    cnn.Open();
+                    command.Connection = cnn;
+                    command.CommandText = "DELETE FROM feedback WHERE feedback.feedbackid = @notitieID";
+                    command.Parameters.AddWithValue("@notitieID", notitieID);
+                    
+
+                    int result = command.ExecuteNonQuery();
+
+                    cnn.Close();
+                    return result;
+                }
+            }
         }
 
         /// <summary>

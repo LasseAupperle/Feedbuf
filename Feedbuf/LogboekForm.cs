@@ -34,11 +34,7 @@ namespace Feedbuf
             
         }
   
-        private void NieuweNotitieBtn_Click(object sender, EventArgs e)
-        {
-            new NieuweNotitiefrom().Show();
-            this.Hide();
-        }
+        
 
         private void refreshBtn_Click(object sender, EventArgs e)
         {
@@ -58,11 +54,49 @@ namespace Feedbuf
 
             Feedback feedback = new Feedback
             {
-                FBinhoud = TxtFB.Text
+                
+                OE = TxtOE.Text,
+                LD = TxtOE.Text,
+                ACT= TxtACT.Text,
+                Uren = Int32.Parse(TxtUREN.Text),
+                FBinhoud = TxtFB.Text,
+                StudentID = Int32.Parse(TxtSTUDENTID.Text),
+                Akkoord = AkkordCheckbox.Checked,
+
 
             };
             DAL dal = new DAL();
             int result = DAL.addNewNotitie(feedback);
+            //check feedback en Feedback in vid
+
+        }
+
+        private void TxtOE_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtFB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DatagridLogboek_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView datagridlogboek = (DataGridView)sender;
+            
+        }
+
+        private void VerwijderBtn_Click(object sender, EventArgs e)
+        {
+            //DataGridView datagridlogboek = (DataGridView)sender;
+            int rowClicked = DatagridLogboek.CurrentRow.Index;
+            MessageBox.Show("De tij is " + rowClicked);
+            int notitieID = (int)DatagridLogboek.Rows[rowClicked].Cells[0].Value;
+            MessageBox.Show("ID van notitie " + notitieID);
+            DAL dal = new DAL();
+
+            int result = dal.verwijderNotitie(notitieID);
         }
     }
 }

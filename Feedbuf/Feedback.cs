@@ -14,11 +14,12 @@ namespace Feedbuf
         public string FBinhoud { get; set; }
         public bool Akkoord { get; set; }
         
-        public DateTime Datumtijd { get; set; }
+       
         public int Uren { get; set; }
         public string OE { get; set; }
         public string LD { get; set; }
         public string ACT { get; set; }
+        public int StudentID { get; set; }
 
         public DAL dal = new DAL();
 
@@ -26,16 +27,17 @@ namespace Feedbuf
         {
 
         }
-        public Feedback(int feedbackId, string fBinhoud, bool akkoord, DateTime datumtijd, int uren, string oE, string lD, string aCT)
+        public Feedback(int feedbackId, string fBinhoud, bool akkoord, int uren, string oe, string ld, string act, int StduentID)
         {
             FeedbackId = feedbackId;
             FBinhoud = fBinhoud;
             Akkoord = akkoord;
-            Datumtijd = datumtijd;
+            
             Uren = uren;
-            OE = oE;
-            LD = lD;
-            ACT = aCT;
+            OE = oe;
+            LD = ld;
+            ACT = act;
+            StudentID = StduentID;
         }
         /*public List<Feedback> ReadFeedbacks()
         {
