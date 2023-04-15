@@ -20,12 +20,13 @@ namespace Feedbuf
         private void InitializeComponent()
         {
             this.Login = new System.Windows.Forms.Button();
-            this.UsernameTBox = new System.Windows.Forms.TextBox();
-            this.PasswordTbox = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.GebruikersnaamLbl = new System.Windows.Forms.Label();
             this.WachtwoordLbl = new System.Windows.Forms.Label();
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.ForgotPasswordLbl = new System.Windows.Forms.Label();
+            this.Docentbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Login
@@ -38,19 +39,19 @@ namespace Feedbuf
             this.Login.UseVisualStyleBackColor = true;
             this.Login.Click += new System.EventHandler(this.Signin_Click);
             // 
-            // UsernameTBox
+            // txtUsername
             // 
-            this.UsernameTBox.Location = new System.Drawing.Point(285, 103);
-            this.UsernameTBox.Name = "UsernameTBox";
-            this.UsernameTBox.Size = new System.Drawing.Size(179, 20);
-            this.UsernameTBox.TabIndex = 1;
+            this.txtUsername.Location = new System.Drawing.Point(285, 103);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(179, 20);
+            this.txtUsername.TabIndex = 1;
             // 
-            // PasswordTbox
+            // txtPassword
             // 
-            this.PasswordTbox.Location = new System.Drawing.Point(285, 173);
-            this.PasswordTbox.Name = "PasswordTbox";
-            this.PasswordTbox.Size = new System.Drawing.Size(179, 20);
-            this.PasswordTbox.TabIndex = 2;
+            this.txtPassword.Location = new System.Drawing.Point(285, 173);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(179, 20);
+            this.txtPassword.TabIndex = 2;
             // 
             // GebruikersnaamLbl
             // 
@@ -93,15 +94,26 @@ namespace Feedbuf
             this.ForgotPasswordLbl.Text = "Wachtwoord vergeten?";
             this.ForgotPasswordLbl.Click += new System.EventHandler(this.ForgotPasswordLbl_Click);
             // 
+            // Docentbtn
+            // 
+            this.Docentbtn.Location = new System.Drawing.Point(285, 340);
+            this.Docentbtn.Name = "Docentbtn";
+            this.Docentbtn.Size = new System.Drawing.Size(179, 23);
+            this.Docentbtn.TabIndex = 7;
+            this.Docentbtn.Text = "Docent inlog";
+            this.Docentbtn.UseVisualStyleBackColor = true;
+            this.Docentbtn.Click += new System.EventHandler(this.Docentbtn_Click);
+            // 
             // LoginForm
             // 
             this.ClientSize = new System.Drawing.Size(771, 391);
+            this.Controls.Add(this.Docentbtn);
             this.Controls.Add(this.ForgotPasswordLbl);
             this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.WachtwoordLbl);
             this.Controls.Add(this.GebruikersnaamLbl);
-            this.Controls.Add(this.PasswordTbox);
-            this.Controls.Add(this.UsernameTBox);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.Login);
             this.Name = "LoginForm";
             this.ResumeLayout(false);
@@ -119,17 +131,55 @@ namespace Feedbuf
         {
 
         }
-
-        private void Signin_Click(object sender, EventArgs e)
-        {
-            new LogboekForm().Show();
-            this.Hide();
-
-        }
-
         private void GebruikersnaamLbl_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void Signin_Click(object sender, EventArgs e)
+        {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            DAL dal = new DAL();
+            List<Student> students = dal.ReadStudents();
+            Student student = students.FirstOrDefault(s => s.Studentnaam == username);
+
+            if (student == null)
+            {
+                // If no student record is found with the given username
+                MessageBox.Show("Invalid username or password.");
+                txtUsername.Clear();
+                txtPassword.Clear();
+                txtUsername.Focus();
+                
+                
+            }
+            else if (student.Wachtwoord != password)
+            {
+                // If the password doesn't match
+                MessageBox.Show("Invalid username or password." + student.Wachtwoord + " " + password);
+            }
+            else
+            {
+                // If the username and password match, log in the student
+
+                new LogboekForm().Show();
+                this.Hide();
+                // TODO: add code to navigate to the student's dashboard or profile page
+            }
+        }
+
+        private void Docentbtn_Click(object sender, EventArgs e)
+        {
+            new DocentForm().Show();
+            this.Hide();
+        }
+        //if () 
+
+
+
+
+
     }
 }

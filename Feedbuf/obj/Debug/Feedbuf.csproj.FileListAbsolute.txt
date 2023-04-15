@@ -24,3 +24,4 @@ C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe.
 C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.exe
 C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\bin\Debug\Feedbuf.pdb
 C:\Users\loojo\Source\Repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.RegisterForm.resources
+C:\Users\loojo\source\repos\LasseAupperle\Feedbuf\Feedbuf\obj\Debug\Feedbuf.DocentForm.resources

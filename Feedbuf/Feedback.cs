@@ -20,6 +20,7 @@ namespace Feedbuf
         public string LD { get; set; }
         public string ACT { get; set; }
         public int StudentID { get; set; }
+        public int DocentID { get; set; }
 
         public DAL dal = new DAL();
 
@@ -27,7 +28,7 @@ namespace Feedbuf
         {
 
         }
-        public Feedback(int feedbackId, string fBinhoud, bool akkoord, int uren, string oe, string ld, string act, int StduentID)
+        public Feedback(int feedbackId, string fBinhoud, bool akkoord, int uren, string oe, string ld, string act, int studentID, int docentID)
         {
             FeedbackId = feedbackId;
             FBinhoud = fBinhoud;
@@ -37,7 +38,8 @@ namespace Feedbuf
             OE = oe;
             LD = ld;
             ACT = act;
-            StudentID = StduentID;
+            StudentID = studentID;
+            DocentID = docentID;
         }
         /*public List<Feedback> ReadFeedbacks()
         {

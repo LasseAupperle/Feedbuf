@@ -31,12 +31,13 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Login;
-        private System.Windows.Forms.TextBox UsernameTBox;
-        private System.Windows.Forms.TextBox PasswordTbox;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label GebruikersnaamLbl;
         private System.Windows.Forms.Label WachtwoordLbl;
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Label ForgotPasswordLbl;
+        private System.Windows.Forms.Button Docentbtn;
     }
 }
 

@@ -18,24 +18,18 @@ namespace Feedbuf
         public LogboekForm()
         {
             InitializeComponent();
-            /*Feedback fb = new Feedback();
-            DatagridLogboek.DataSource = fb.ReadFeedbacks();*/
 
         }
 
         public void hidePanels() 
-        {
-                    
+        {                   
         }
 
         private void Logboek_Load(object sender, EventArgs e)
         {
-            hidePanels();
-            
+            hidePanels();           
         }
   
-        
-
         private void refreshBtn_Click(object sender, EventArgs e)
         {
             DAL dal = new DAL();
@@ -46,48 +40,36 @@ namespace Feedbuf
 
         private void UrenLbl_Click(object sender, EventArgs e)
         {
-
         }
 
         private void ToevoegBtn_Click(object sender, EventArgs e)
         {
-
             Feedback feedback = new Feedback
-            {
-                
+            {              
                 OE = TxtOE.Text,
                 LD = TxtOE.Text,
                 ACT= TxtACT.Text,
                 Uren = Int32.Parse(TxtUREN.Text),
                 FBinhoud = TxtFB.Text,
-                StudentID = Int32.Parse(TxtSTUDENTID.Text),
+                StudentID = Int32.Parse(TxtSTUDENTID.Text), 
+                DocentID = Int32.Parse(DocentIDTxt.Text),
                 Akkoord = AkkordCheckbox.Checked,
-
-
             };
             DAL dal = new DAL();
             int result = DAL.addNewNotitie(feedback);
             MessageBox.Show("U heeft een notitie ingevuld.");
-            //check feedback en Feedback in vid
-
         }
 
         private void TxtOE_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void TxtFB_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void DatagridLogboek_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView datagridlogboek = (DataGridView)sender;
-
-
-            
         }
 
         private void VerwijderBtn_Click(object sender, EventArgs e)
@@ -96,10 +78,24 @@ namespace Feedbuf
             int rowClicked = DatagridLogboek.CurrentRow.Index;
             
             int notitieID = (int)DatagridLogboek.Rows[rowClicked].Cells[0].Value;
-            MessageBox.Show("U heeft het volgende ID geselecteerd: " + notitieID + "Deze zal verwijderd worden.");
+            MessageBox.Show("U heeft het volgende ID geselecteerd: " + notitieID + " Deze zal verwijderd worden.");
             DAL dal = new DAL();
 
             int result = dal.verwijderNotitie(notitieID);
         }
+
+        private void UitlogBtn_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+            this.Hide();
+        }
+
+        //private void ChangeBtn_Click(object sender, EventArgs e)
+        /*{
+            int rowClicked = DatagridLogboek.CurrentRow.Index;
+            int notitieID = (int)DatagridLogboek.Rows[rowClicked].Cells[0].Value;
+            DAL dal = new DAL();
+            int change = dal.veranderNotitite(notitieID);
+        }*/
     }
 }

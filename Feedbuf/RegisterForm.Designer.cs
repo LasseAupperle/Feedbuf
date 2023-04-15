@@ -35,6 +35,7 @@
             this.VolledigenaamTxt = new System.Windows.Forms.TextBox();
             this.EmailTxt = new System.Windows.Forms.TextBox();
             this.WachtwoordTxt = new System.Windows.Forms.TextBox();
+            this.TerugBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VolledigeNaamLbl
@@ -66,39 +67,50 @@
             // 
             // RegistratieBtn
             // 
-            this.RegistratieBtn.Location = new System.Drawing.Point(328, 237);
+            this.RegistratieBtn.Location = new System.Drawing.Point(288, 237);
             this.RegistratieBtn.Name = "RegistratieBtn";
-            this.RegistratieBtn.Size = new System.Drawing.Size(100, 23);
+            this.RegistratieBtn.Size = new System.Drawing.Size(170, 23);
             this.RegistratieBtn.TabIndex = 4;
             this.RegistratieBtn.Text = "Registreren";
             this.RegistratieBtn.UseVisualStyleBackColor = true;
             // 
             // VolledigenaamTxt
             // 
-            this.VolledigenaamTxt.Location = new System.Drawing.Point(328, 119);
+            this.VolledigenaamTxt.Location = new System.Drawing.Point(288, 119);
             this.VolledigenaamTxt.Name = "VolledigenaamTxt";
-            this.VolledigenaamTxt.Size = new System.Drawing.Size(100, 20);
+            this.VolledigenaamTxt.Size = new System.Drawing.Size(170, 20);
             this.VolledigenaamTxt.TabIndex = 5;
             // 
             // EmailTxt
             // 
-            this.EmailTxt.Location = new System.Drawing.Point(328, 160);
+            this.EmailTxt.Location = new System.Drawing.Point(288, 160);
             this.EmailTxt.Name = "EmailTxt";
-            this.EmailTxt.Size = new System.Drawing.Size(100, 20);
+            this.EmailTxt.Size = new System.Drawing.Size(170, 20);
             this.EmailTxt.TabIndex = 6;
             // 
             // WachtwoordTxt
             // 
-            this.WachtwoordTxt.Location = new System.Drawing.Point(328, 199);
+            this.WachtwoordTxt.Location = new System.Drawing.Point(288, 199);
             this.WachtwoordTxt.Name = "WachtwoordTxt";
-            this.WachtwoordTxt.Size = new System.Drawing.Size(100, 20);
+            this.WachtwoordTxt.Size = new System.Drawing.Size(170, 20);
             this.WachtwoordTxt.TabIndex = 7;
+            // 
+            // TerugBtn
+            // 
+            this.TerugBtn.Location = new System.Drawing.Point(288, 267);
+            this.TerugBtn.Name = "TerugBtn";
+            this.TerugBtn.Size = new System.Drawing.Size(170, 23);
+            this.TerugBtn.TabIndex = 8;
+            this.TerugBtn.Text = "Terug";
+            this.TerugBtn.UseVisualStyleBackColor = true;
+            this.TerugBtn.Click += new System.EventHandler(this.TerugBtn_Click);
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TerugBtn);
             this.Controls.Add(this.WachtwoordTxt);
             this.Controls.Add(this.EmailTxt);
             this.Controls.Add(this.VolledigenaamTxt);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.TextBox VolledigenaamTxt;
         private System.Windows.Forms.TextBox EmailTxt;
         private System.Windows.Forms.TextBox WachtwoordTxt;
+        private System.Windows.Forms.Button TerugBtn;
     }
 }

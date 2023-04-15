@@ -16,5 +16,11 @@ namespace Feedbuf
         {
             InitializeComponent();
         }
+
+        private void TerugBtn_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+            this.Hide();
+        }
     }
 }
