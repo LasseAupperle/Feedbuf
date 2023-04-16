@@ -44,8 +44,6 @@ namespace Feedbuf
         public List<Feedback> ReadFeedbacks()
         {
             Feedbacks.Clear();
-            //SqlConnection cnn = new SqlConnection(connectionString);
-
             using (SqlConnection cnn = new SqlConnection())
             {
                 using (SqlCommand command = new SqlCommand())
@@ -69,8 +67,6 @@ namespace Feedbuf
                                                                         , Int32.Parse(dataReader[8].ToString())
                                                                         ));
                         }
-
-
                     }
                     cnn.Close();
                 }

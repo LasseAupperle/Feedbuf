@@ -74,7 +74,7 @@ namespace Feedbuf
 
         private void VerwijderBtn_Click(object sender, EventArgs e)
         {
-            //DataGridView datagridlogboek = (DataGridView)sender;
+
             int rowClicked = DatagridLogboek.CurrentRow.Index;
             
             int notitieID = (int)DatagridLogboek.Rows[rowClicked].Cells[0].Value;

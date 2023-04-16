@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL.cs" />
+    <Compile Include="Docent.cs" />
     <Compile Include="DocentForm.cs">
       <SubType>Form</SubType>
     </Compile>

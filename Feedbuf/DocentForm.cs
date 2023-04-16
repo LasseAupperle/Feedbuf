@@ -37,7 +37,6 @@ namespace Feedbuf
 
         private void Studentenfeedbackdatagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void DocentuitlogBtn_Click(object sender, EventArgs e)
