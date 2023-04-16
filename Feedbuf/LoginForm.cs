@@ -158,7 +158,7 @@ namespace Feedbuf
             else if (student.Wachtwoord != password)
             {
                 // If the password doesn't match
-                MessageBox.Show("Invalid username or password." + student.Wachtwoord + " " + password);
+                MessageBox.Show("Invalid username or password.");
             }
             else
             {
